@@ -1,3 +1,4 @@
-Based on the description of UnauthorizedAccess:EC2/SSHBruteForce, I believe GuardDuty monitors port 22 
-failed SSH login attempts.  If these failed login attempts exceed a threshold over a short period of time 
-then the finding is triggered.
+Based on the description of UnauthorizedAccess:EC2/SSHBruteForce, GuardDuty analyzes VPC flow logs which captures
+the IP traffic going to and from the Web Application Server.  Using the VPC flow events it can see the many
+unsuccessful SSH logins (port 22) on this instance and trigger the alert.
+
