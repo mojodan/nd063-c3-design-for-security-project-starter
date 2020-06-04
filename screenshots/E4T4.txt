@@ -1,0 +1,9 @@
+1.  We can move the web application instance to the private subnet (10.192.20.0/24) so that it can be accessed
+    via the ALB in the public subnet.
+
+2.  No, the VPC private endpoint does not replace the insecure IAM permissions.  Those would IAM permissions would 
+    need to be corrrected or removed.
+
+3.  No, existing S3 bucket objects are not encrypted when enabling default encryption.
+
+4.  It will revert any changes to the stack's resources so that they match the original cloud formation template.

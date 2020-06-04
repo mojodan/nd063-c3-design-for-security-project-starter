@@ -1,0 +1,8 @@
+1. The S3 secret bucket shares the same API credentials as the S3 free recipe bucket.  This is not
+a secure approach for protecting the secret recipes.  Access and management of this bucket
+should be provided through an IAM Role and policy.
+
+2.  The web service instance is in the public subnet and is exposed to port scans from all IP addresses.  
+This should be moved to the private subnet and only accessible through the ALB.
+
+

@@ -1,0 +1,12 @@
+a.  Scan infrastructure as code templates
+    Tool:  Regula
+    Ex. Compliance Violation:  An overly permissive IAM policy (e.g., full administrative privs).
+
+b.  Scan AMI's or containers
+    Tool:  Amazon ECR
+    Ex. Compliance Violation: CVE-2019-9513 -- "Some HTTP/2 implementations are vulnerable to resource loops..."
+
+c.  Scan an AWS environment for cloud configuration vulnerabilities
+    Tool:  AWS Config
+    Ex. Compliance Violation: securityhub-s3-bucket-server-side-encryption-enabled -- checks that the
+                      amazon s3 bucket has default encryption enabled.

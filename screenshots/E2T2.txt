@@ -1,0 +1,15 @@
+1. AWS Config reported security group issue where ssh is not restricted to IP addresses for the web server.
+
+   Recommendation: Only allow SSH from a bastion host which is harden.
+
+2. AWS Inspector reported many ports (FTP, Telnet, etc) are open to the internet for the web server.
+
+   Recommendation: Block these ports by updating the security group rules.
+
+3. Security Hub reported that the CloudTrail logs need to be encrypted at rest.
+
+   Recommendation: Encrypt the logs at rest using KMS CMKs.
+
+4. AWS Config reported the S3 buckets for the free and secret recipes are not encrypted.
+
+   Recommendation:  Enable default server side encryption for these buckets.

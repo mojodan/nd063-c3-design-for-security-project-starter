@@ -1,0 +1,8 @@
+Question 1:
+1.  Disable SSH password login on the application web server.
+2.  Encrypt the S3 buckets data at rest. (server side encryption)
+3.  Only allow access to the S3 buckets through a VPC private endpoint.
+
+Question 2:
+Assign an IAM role to access to the secret bucket and ensure the API
+credentials are not associated with that particular role. 

@@ -1,0 +1,3 @@
+Based on the description of UnauthorizedAccess:EC2/SSHBruteForce, I believe GuardDuty monitors port 22 
+failed SSH login attempts.  If these failed login attempts exceed a threshold over a short period of time 
+then the finding is triggered.
